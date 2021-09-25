@@ -1,22 +1,40 @@
+@import "../../global.scss";
+
 .intro{
     background-color: white;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     .left{
         flex: 0.5;
         overflow: hidden;
         .imgContainer{
-            width: 40vw;
-            height: 40vw;
+            width: 600px;
+            height: 600px;
             background-color: crimson;
-            // border-radius: 50%;
+            border-radius: 50%;
             display: flex;
-            align-items: flex-start;
+            align-items: flex-end;
             justify-content: center;
-            float: left;
+            float: right;
             margin-top: 10px;
+
+            @include  mobile{
+                align-items: flex-start
+            }
             img{
-                height: 35vw;
-                margin: 2vw;
+                height: 60%;
+                margin-bottom: 40px;
+
+                @include mobile{
+                    height: 50%;
+                    margin-bottom: 0px;
+                }
             }
         }
     }
@@ -30,15 +48,30 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+            }
             h1{
                 font-size: 40px;
                 margin: 10px 0;
+                @include mobile{
+                    font-size: 30px;
+                }
             }
             h2{
                 font-size: 50px;
+                @include mobile{
+                    font-size: 40px;
+                }
+                
             }
             h3{
                 font-size: 30px;
+                @include mobile{
+                    font-size: 25px;
+                }
                 span{
                     font-size: inherit;
                     color:crimson;

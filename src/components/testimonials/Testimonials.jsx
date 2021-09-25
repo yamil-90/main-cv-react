@@ -1,23 +1,58 @@
 import "./testimonials.scss"
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-export default function Testimonials(){
+export default function Testimonials() {
+    const data = [
+        {
+            id: 1,
+            name: "Tom Durden",
+            title: "Senior Developer",
+            img:
+                "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            icon: "assets/twitter.png",
+            desc:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        },
+        {
+            id: 2,
+            name: "Alex Kalinski",
+            title: "Co-Founder of DELKA",
+            img:
+                "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            icon: "assets/youtube-icon.png",
+            desc:
+                "Lorem ipsum dolor sit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+            featured: true,
+        },
+        {
+            id: 3,
+            name: "Lola",
+            title: "CEO of Bones",
+            img:
+                "assets/pañuelo-V.jpeg",
+            icon: "assets/linkedin.png",
+            desc:
+                "woof woof, ar rooff arf arf rooff. woof nnnn.... woof",
+        },
+    ];
     return (
         <div className="testimonials" id="testimonials">
             <h1>Testimonials</h1>
             <div className="container">
-                <div className="card">
-                    <div className="top">
-                        <ArrowBackIcon className="left" />
-                        <img className="user" src="https://i2.wp.com/www.hindishayaricollections.com/wp-content/uploads/2019/09/beautiful-girls-images-wallpapers-31.jpeg?resize=480%2C700&ssl=1" alt="" />
-                        <img className="right" src="./assets/youtube-icon.jpeg" alt="" />
+                {data.map((d) => (
+                    <div className={d.featured?"card featured":"card"}>
+                        <div className="top">
+                            <ArrowBackIcon className="left" />
+                            <img className="user" src={d.img} alt="" />
+                            <img className="right" src={d.icon} alt="" />
+                        </div>
+                        <div className="center">{d.desc}</div>
+                        <div className="bottom">
+                            <h3>{d.name}</h3>
+                            <h4>{d.title}</h4>
+                        </div>
                     </div>
-                    <div className="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ullam veniam, sit vitae quidem omnis adipisci ex! Deserunt, incidunt.</div>
-                    <div className="bottom">
-                        <h3>Jean Gray</h3>
-                        <h4>CEO</h4>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )

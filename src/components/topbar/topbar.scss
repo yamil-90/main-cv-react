@@ -1,8 +1,9 @@
 @import "../../global.scss";
 
+
 .topbar {
     width: 100%;
-    height: 70px;
+    height: 71px;
     background-color: white;
     color: $mainColor;
     position: fixed;
@@ -35,6 +36,9 @@
                 span {
                     font-size: 18px;
                     font-weight: 500;
+                }
+                @include mobile{
+                    display: none;
                 }
             }
         }

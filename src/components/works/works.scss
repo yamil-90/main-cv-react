@@ -1,5 +1,6 @@
+@import "../../global.scss";
 .works {
-    background-color: lightslategray;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +11,9 @@
         cursor: pointer;
         font-size: 90;
         transition: all 1s ease;
+        @include mobile {
+            display: none;
+        }
         &.left {
             left: 100px;
             
@@ -30,11 +34,18 @@
         position: absolute;
         left: 0;
         transition: all 1s ease;
+
+        @include mobile {
+            height:85vh;
+            flex-direction: column;
+            justify-content: center;
+        }
         .container {
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 5px 0;
             .item {
                 width: 700px;
                 height: 100%;
@@ -43,6 +54,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 90%;
+                    height: 150px;
+                    
+
+                }
+
                 .left {
                     flex: 4;
                     height: 90%;
@@ -66,10 +85,16 @@
                             img {
                                 width: 25px;
                             }
+                            @include mobile{
+                                display: none;
+                            }
                         }
                     }
                     h3 {
                         font-size: 20px;
+                        @include mobile{
+                            font-size: 15px;
+                        }
                     }
                     p {
                         font-size: 13px;
@@ -89,7 +114,7 @@
                     overflow: hidden;
                     img {
                         height: 100%;
-                        width: 100%
+                        border-radius: 10px;
                     }
                 }
             }
