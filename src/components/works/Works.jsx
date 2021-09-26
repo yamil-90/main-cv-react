@@ -9,22 +9,22 @@ export default function Works(){
         {
             id:1,
             icon:"./assets/code-icon.png",
-            title:"Coding",
-            desc:"Coding description",
-            img:"https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg"
+            title:"Frontend",
+            desc:"ReactJs, JavaScript, HTML5, CSS3, Sass",
+            img:"https://codematters.online/wp-content/uploads/2019/01/Mobile-app-development-image.jpg"
         },
         {
             id:2,
             icon:"./assets/code-mobile-icon.png",
-            title:"Mobile programming",
-            desc:"mobile description",
-            img:"https://codematters.online/wp-content/uploads/2019/01/Mobile-app-development-image.jpg"
+            title:"BackEnd",
+            desc:"PHH, Python, NodeJS, SQL, Laravel, Flask",
+            img:"https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg"
         },
         {
             id:3,
             icon:"./assets/web-icon.png",
-            title:"Web development",
-            desc:"web development description",
+            title:"Misc",
+            desc:"Server Setup, AWS, Linux bash, Solidity",
             img:"https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg"
         },
     ]
@@ -46,7 +46,6 @@ export default function Works(){
                                 </div>
                                 <h3>{d.title}</h3>
                                 <p>{d.desc}</p>
-                                <span>projects</span>
                             </div>
                         </div>
                         <div className="right">

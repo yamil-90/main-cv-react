@@ -3,29 +3,20 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export default function Testimonials() {
     const data = [
+        
         {
             id: 1,
-            name: "Tom Durden",
-            title: "Senior Developer",
+            name: "Patricio Parra Martinez",
+            title: "BSc. Biochemistry ",
             img:
-                "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            icon: "assets/twitter.png",
+                "https://media-exp1.licdn.com/dms/image/D4D35AQHMtYKm1JlfMw/profile-framedphoto-shrink_200_200/0/1626809133232?e=1632675600&v=beta&t=urSKl6d-mWMmPlEL4JiLmRgfhSQXUdiM2oC3DTddg3Y",
+            icon: "assets/linkedin.png",
             desc:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
-        },
-        {
-            id: 2,
-            name: "Alex Kalinski",
-            title: "Co-Founder of DELKA",
-            img:
-                "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            icon: "assets/youtube-icon.png",
-            desc:
-                "Lorem ipsum dolor sit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+                "Tengo el agrado de haber estudiado y trabajado con Yamil en varias oportunidades. Quisiera destacar su pasión por el trabajo y velocidad de aprendizaje. Realmente es una persona con mucho potencial y respondo por él. No duden en contactarme para pedirme referencias",
             featured: true,
         },
         {
-            id: 3,
+            id: 2,
             name: "Lola",
             title: "CEO of Bones",
             img:
@@ -34,6 +25,16 @@ export default function Testimonials() {
             desc:
                 "woof woof, ar rooff arf arf rooff. woof nnnn.... woof",
         },
+        {
+            id: 3,
+            name: "Tom Durden",
+            title: "Senior Developer",
+            img:
+                "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            icon: "assets/twitter.png",
+            desc:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        }
     ];
     return (
         <div className="testimonials" id="testimonials">
